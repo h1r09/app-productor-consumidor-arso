@@ -21,7 +21,7 @@ app.post("/hook/:sha", async (req, res) => {
     { file: parsedProducerFile, path: producerFilePath },
   ].forEach((doc) => {
     const imageName = doc.file.spec.containers[0].image.split(":")[0];
-    const newImageName = [imageName, `master-${req.params.sha}`].join(":");
+    const newImageName = [imageName, `main-${req.params.sha}`].join(":");
 
     doc.file.spec.containers[0].image = newImageName;
 
