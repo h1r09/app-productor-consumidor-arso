@@ -26,7 +26,7 @@ const runProducer = async () => {
         },
       ],
     });
-  }, 5000);
+  }, 10000);
 };
 
 runProducer().then(() => {
