@@ -16,7 +16,7 @@ const runConsumer = async () => {
 
   await consumer.run({
     eachMessage: async ({ topic, partition, message }) => {
-      console.log(`Message from topic ${topic} is ${message.value.toString()}`);
+      console.log(`Mensaje del topic ${topic} is ${message.value.toString()}`);
     },
   });
 };

@@ -22,7 +22,7 @@ const runProducer = async () => {
       topic: "arso-topic",
       messages: [
         {
-          value: `Producer time is ${new Date().toLocaleString()} and the message is ${message}`,
+          value: `La hora del productor es ${new Date().toLocaleString()} y este es el mensjae número ${message}`,
         },
       ],
     });
@@ -30,7 +30,7 @@ const runProducer = async () => {
 };
 
 runProducer().then(() => {
-  console.log("Producer is producing messages");
+  console.log("El productor está produciendo mensajes");
 });
 
 process.on("beforeExit", (code) => {
