@@ -22,7 +22,7 @@ const runProducer = async () => {
       topic: "arso-topic",
       messages: [
         {
-          value: `La fecha y hora del productor son ${new Date().toLocaleString()} y este es el mensaje número ${message}`,
+          value: `La fecha y hora del productor son ${new Date().toLocaleString()} y es el mensaje número ${message}`,
           //value: `La fecha es ${new Date().toLocaleString()}`,
         },
       ],
