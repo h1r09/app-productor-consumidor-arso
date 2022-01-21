@@ -22,7 +22,7 @@ const runConsumer = async () => {
 };
 
 runConsumer().then(() => {
-  console.log("Consumer ready");
+  console.log("Consumidor listo");
 });
 
 process.on("beforeExit", (code) => {
